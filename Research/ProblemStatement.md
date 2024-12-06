@@ -5,11 +5,11 @@ There is a burgeoning market for AI assistants and agents that offers opportunit
 
 Consider the challenges facing new product developers in this domain. There can be substantial software development costs. Following Porter's Five Forces Model, a company may want to consider market factors prior to embarking upon a major design and development effort.
 
-Supplier power. There may be software dependencies on systems provided by the major players, including OpenAI, Microsoft, Alphabet/Google, and Meta/Facebook. 
+**Supplier power.** There may be software dependencies on systems provided by the major players, including OpenAI, Microsoft, Alphabet/Google, and Meta/Facebook. 
 
-Threat of entry. Cloud resources allow easy entry not only for your startup, but also for other startups operating in the same product or service category. 
+**Threat of entry.** Cloud resources allow easy entry not only for your startup, but also for other startups operating in the same product or service category. 
 
-Substitute products. Here we need to think broadly about the many systems that may be employed to provide similar value to clients/customers. This includes traditional (non-AI) systems that have been operational for many years. 
+**Substitute products.** Here we need to think broadly about the many systems that may be employed to provide similar value to clients/customers. This includes traditional (non-AI) systems that have been operational for many years. 
 
 
 
