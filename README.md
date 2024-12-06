@@ -1,29 +1,26 @@
 # MSDS-436
 
 ## Recommendation for Management
-### Are there significant opportunities for automating financial services using conversational assistants and AI agents? 
+The short answer is yes, there are significant opportunities for automating financial services using conversational assistants and AI agents. The Gartner report points out that companies are currently using AI in three ways: to augment productivity, entirely behind-the-scenes, and across the board including customer-facing use-cases. The Gartner report also considers feasability in terms of three components: technical feasibility, internal readiness, and external readiness. Based on these three factors, various AI technologies can be assessed as low, medium, or high feasability. Looking at Banking specifically, Gartner highlights Frontline AI co-pilots, Banking fraud prevention, and synthetic credit data as high feasability use cases for AI that span the range from customer-facing to entirely behind-the-scenes. The cool part about this is financial services are able to use AI to both automate mundane tasks *and* innovate. Loan processing, for example, is categorized at medium feasability, mostly internal, and potentially game-changing. There are absolutlely multiple AI technologies available at various risk levels and customer-facing roles depending on what a particular financial instution is interested in.
 
+Summary from ChatGPT itself: 
+> AI adoption in financial services is no longer experimental—it's integral to the competitive strategies of major players and startups alike. Firms that leverage AI for automation, personalization, and risk management are seeing substantial operational efficiencies and customer satisfaction improvements. The scale of adoption is expected to grow further as technology advances and regulations adapt to these innovations.
 
-
-
-**Problem: A Fortune 500 company involved in financial services is looking for a data scientist to help in exploring AI product opportunities. In particular, it would like to learn more about the application of AI within corporate information infrastructure, specifically focusing on leaders and emerging players in this field.** 
-
-* The company is interested in understanding the current landscape, emerging technologies, and new growth opportunities, with a focus on financial services. 
-* Are other financial services firms utilizing AI and to what extent? 
-  * Provide insights into existing players, emerging technologies, and potential growth areas in AI for financial services
-* The company is considering a number of potential new product opportunities, such as automated trading, stock-broker agents, and financial advisors.
-* Conversational agents that can quickly provide stock quotes and financial analysis are also being considered. 
-* The company is aware of contemporary developments in financial machine learning and may be able to provide such services directly to its clients.
-* Financial machine learning is an active area algorithmic trading, as can be seen in a quick search of Amazon shows. 
-  * It is possible that the company will be building a system for linking financial clients directly with a conversational agent.
-
-
-This represents a significant consulting opportunity for you. To secure the engagement, in addition to documenting your qualifications through your resume, personal website, and code repositories from past projects, the firm is looking for a <mark>preliminary report that shows you have a firm grasp of the information technology space that comprises AI.</mark> The report needs to go beyond what traditional technology evaluation firms provide. The report needs to go beyond what GenAI tools can provide. That is, demonstrate the special expertise you have acquired as an MSDS student and data science practitioner.
 
 ## Repository Folders and Files
 1. "Code" Folder contains files used to get Scrapy working
+ * The "quotes_spider.py" file is the one that works and outputs "quotes.jsonl"
+ * There are additional screenshots from troubleshooting in this folder
+2. The "Research" Folder contains resources found while researching
+ * Saved ChatGPT conversations
+ * PDFs of the cited textbook chapters
+ * A really useful report by Gartner "Map Your AI Use Cases by Opportunity: Ready The IT Team to Drive Success", as well as an image from the report ("the-ai-opportunity-radar.png")
+ 
+## Approach to using Generative AI
+After reading the Gartner report, I asked ChatGPT some of the relevant research questions. I found that ChatGPT's information corroborated both the Gartner report and my own lived experience (e.g. interacting with Bank of America's Erica Personal Assistant). Not having a strong financial background myself, ChatGPT was able to fill in knowledge gaps and further contextualize the benefits of GenAI technologies in that space.
 
-## Research Notes
+
+## Additional Notes for Myself
 ### Gartner Wikipedia Article Summary:
 * Gartner is a tech research and consulting firm
 * Based in Connecticut
@@ -41,3 +38,17 @@ What Does Gartner have to say about AI and conversational assistants?
 * Forrester is a research and advisory company offering a variety of services including research, consulting, and events
 * Headquarters in Cambridge, MA and London with additional offices around the world
 * Founded in 1983
+
+
+### Scrapy Resources: 
+* https://scrapy.org/
+* https://docs.scrapy.org/en/latest/intro/overview.html
+* https://docs.scrapy.org/en/2.11/topics/settings.html
+
+How to run Scrapy:
+1. Use PowerShell
+2. scrapy runspider quotes_spider.py -o quotes.jsonl
+
+Sidenotes: 
+- had to pip install scrapy first
+- had to do some troubleshooting that involved updating my PATH variable
